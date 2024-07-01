@@ -1,0 +1,17 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  padding:  2rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+
+/* body {
+    display: flex;
+    place-items: center;
+  } */
+
