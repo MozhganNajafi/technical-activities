@@ -7,7 +7,8 @@
 - [Folder Structure](#folder-structure)
 
 ## Overview
-This project is designed to evaluate frontend technical skills and is built with Vue 3. It includes three activities:
+This project is designed to evaluate frontend technical skills. This project utilises Vue 3 and uses vitest for testing.
+It includes three activities:
 
 The first activity is accessible via the "Activity 1" link in the navigation bar and serves as the homepage.
 The other activities are available through their respective links in the navigation bar.
@@ -48,25 +49,6 @@ npm run build
 npm run test:unit
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
@@ -81,7 +63,9 @@ All app source code is placed in `src` folder.
 
 - `/assets` contains all base stylesheets
 
-- `/components` contains all components including reusable and customised components and their test files
+- `/components` contains all components including reusable and customised components
+
+- `/components/__tests__` contains all components test files
 
 - `/router` contains all routes used in the project
 
